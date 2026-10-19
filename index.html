@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petal Planner - a gentle daily planner</title>
+<meta name="description" content="Petal Planner is a daily task planner with streaks, rewards and WhatsApp quick-add reminders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --rose:#C97C87; --plum:#4A2545; --ink:#3a2a3a; --muted:#8a7280; --bg1:#F3E4DC; --bg2:#FBF3EF; --card:#ffffff; --line:#eadcd8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --rose:#E09AA6; --plum:#F1DDE9; --ink:#EBDCE6; --muted:#b39bab; --bg1:#170D18; --bg2:#201222; --card:#2a1a2c; --line:#3d2a40; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:'Poppins',system-ui,sans-serif; color:var(--ink); line-height:1.7;
+         background: radial-gradient(circle at 15% 0%, var(--bg1) 0%, var(--bg2) 55%) fixed; min-height:100vh; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0 8px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  .brand { font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--plum); text-decoration:none; font-weight:600; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:.9rem; }
+  nav a:hover { color:var(--rose); }
+  h1 { font-family:'Playfair Display',serif; color:var(--plum); font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:.6em 0 .3em; font-weight:600; }
+  h2 { font-family:'Playfair Display',serif; color:var(--plum); font-size:1.4rem; margin:1.8em 0 .3em; font-weight:600; }
+  p, li { font-size: .98rem; }
+  .lead { font-size:1.1rem; color:var(--muted); max-width:34em; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin:28px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px 20px; }
+  .card h3 { margin:0 0 4px; font-size:1rem; color:var(--plum); }
+  .card p { margin:0; font-size:.92rem; color:var(--muted); }
+  .note { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--rose); border-radius:12px; padding:14px 18px; margin:24px 0; }
+  footer { border-top:1px solid var(--line); margin-top:48px; padding:22px 0 40px; color:var(--muted); font-size:.85rem; }
+  footer a { color:var(--rose); }
+  a { color:var(--rose); }
+  .updated { color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="index.html">&#10047; Petal Planner</a>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main>
+
+<h1>A gentler way to get things done.</h1>
+<p class="lead">Petal Planner is a daily task planner that grows a little garden as you finish your tasks. Add tasks in the app, or just send a WhatsApp message and it shows up in your planner with a reminder.</p>
+
+<div class="grid">
+  <div class="card"><h3>Daily planner</h3><p>Plan tasks by day, priority and time, and review each day in the tracker.</p></div>
+  <div class="card"><h3>Petals &amp; rewards</h3><p>Earn petals for finished tasks and spend them on rewards you choose yourself.</p></div>
+  <div class="card"><h3>Challenges</h3><p>Build habits with multi-day challenges and watch your streak grow.</p></div>
+  <div class="card"><h3>WhatsApp quick-add</h3><p>Text a task like &ldquo;pay bill tomorrow 5pm&rdquo; and get a reminder at that time.</p></div>
+</div>
+
+<h2>How the WhatsApp feature works</h2>
+<p>After you sign up, you can link your own WhatsApp number inside the app. When you send a message to the Petal Planner WhatsApp number, we turn it into a task in your planner. If you included a time, we send you a reminder on WhatsApp at that time. You can ask us to unlink your number or delete your data at any time by email.</p>
+
+<div class="note">
+  <strong>Who we are.</strong> Petal Planner is an independent product built and operated by Musfira Mubeen in Pakistan. Questions, feedback or data requests: <a href="mailto:musfiramubeen553@gmail.com">musfiramubeen553@gmail.com</a>.
+</div>
+</main>
+<footer>
+  <p>Petal Planner is built and operated by Musfira Mubeen, Pakistan. Contact: <a href="mailto:musfiramubeen553@gmail.com">musfiramubeen553@gmail.com</a></p>
+  <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></p>
+</footer>
+</div>
+</body>
+</html>
